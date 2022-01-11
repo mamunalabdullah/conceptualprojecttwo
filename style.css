@@ -195,11 +195,18 @@ body{
     border-radius: 15px;
 }
 .section-title{
+    text-align: center;
+}
+.section-title h2{
     text-transform: capitalize;
     font-size: 35px;
-    text-align: center;
     color: #22bedd;
     margin-bottom: 45px;
+    border-left: 3px solid #22bedd;
+    border-right: 3px solid #22bedd;
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 0.8;
 }
 .gallary{
     display: flex;
