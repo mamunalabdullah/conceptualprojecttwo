@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora&family=PT+Sans&family=Playfair+Display:ital,wght@0,400;1,500&family=Raleway:wght@400;500;700&family=Spline+Sans&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Spline Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #121212;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.banner{
+    display: flex;
+    height: 100vh;
+    color: #fff;
+    text-align: justify;
+}
+.banner-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    text-transform: capitalize;
+    font-size: 55px;
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+.title::after{
+    content: 'abdullah al mamun';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #22bedd;
+    animation: typing 4s linear 3s infinite;
+}
+@keyframes typing{
+    0%{
+        content:'a|';
+    }
+    4%{
+        content:'ab|';
+    }
+    8%{
+        content:'abd|';
+    }
+    12%{
+        content:'abdu|';
+    }
+    16%{
+        content:'abdul|';
+    }
+    20%{
+        content:'abdull|';
+    }
+    24%{
+        content:'abdulla|';
+    }
+    28%{
+        content:'abdullah|';
+    }
+    32%{
+        content:'abdullah |';
+    }
+    36%{
+        content:'abdullah a|';
+    }
+    40%{
+        content:'abdullah al|';
+    }
+    44%{
+        content:'abdullah al |';
+    }
+    48%{
+        content:'abdullah al m|';
+    }
+    52%{
+        content:'abdullah al ma|';
+    }
+    56%{
+        content:'abdullah al mam|';
+    }
+    60%{
+        content:'abdullah al mamu|';
+    }
+    64%{
+        content:'abdullah al mamun|';
+    }
+    68%,
+    82%{
+        content:'abdullah al mamun|';
+    }
+    83%{
+        content:'abdullah al mamu|';
+    }
+    84%{
+        content:'abdullah al mam|';
+    }
+    85%{
+        content:'abdullah al ma|';
+    }
+    86%{
+        content:'abdullah al m|';
+    }
+    87%{
+        content:'abdullah al |';
+    }
+    88%{
+        content:'abdullah al|';
+    }
+    89%{
+        content:'abdullah a|';
+    }
+    90%{
+        content:'abdullah |';
+    }
+    91%{
+        content:'abdullah|';
+    }
+    92%{
+        content:'abdulla|';
+    }
+    93%{
+        content:'abdull|';
+    }
+    94%{
+        content:'abdul|';
+    }
+    95%{
+        content:'abdu|';
+    }
+    96%{
+        content:'abd|';
+    }
+    97%{
+        content:'ab|';
+    }
+    98%{
+        content:'a|';
+    }
+    99%{
+        content:'|';
+    }
+    100%{
+        content:'|';
+    }
+
+    
+}
+.button-link{
+    padding: 10px 40px;
+    background-color: #22bedd;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+.button-link:hover{
+    padding: 10px 40px;
+    background-color: #121212;
+    border: 1px solid #22bedd;
+}
+.button-link:hover a{
+    color: #22bedd;
+}
+.button-link a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.banner-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-right img{
+    width: 60%;
+    border: 3px solid #22bedd;
+    border-radius: 15px;
+}
