@@ -44,7 +44,7 @@ body{
     top: 0;
     left: 0;
     color: #22bedd;
-    animation: typing 4s linear 3s infinite;
+    animation: typing 4s linear 1s infinite;
 }
 @keyframes typing{
     0%{
@@ -166,7 +166,7 @@ body{
     border: none;
     margin-top: 20px;
     cursor: pointer;
-    transition: .4s;
+    transition: .4s linear;
 }
 .button-link:hover{
     padding: 10px 40px;
@@ -193,4 +193,86 @@ body{
     width: 60%;
     border: 3px solid #22bedd;
     border-radius: 15px;
+}
+.section-title{
+    text-transform: capitalize;
+    font-size: 35px;
+    text-align: center;
+    color: #22bedd;
+    margin-bottom: 45px;
+}
+.gallary{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;   
+}
+.photoframe{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.photoframe img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.border{
+    background-color: #fff; 
+    position: absolute;  
+}
+.border.top, .border.bottom{
+    width: 240px;
+    height: 3px;
+}
+.border.left, .border.right{
+    width: 3px;
+    height: 240px;
+}
+.border.top{
+    top: 5px;
+    right: 100%;
+    transition: 0.8s linear;
+}
+.border.bottom{
+    bottom: 5px;
+    left: 100%;
+    transition: 0.8s linear;
+}
+.border.left{
+    top: 100%;
+    left: 5px;
+    transition: 0.8s linear;
+}
+.border.right{
+    bottom: 100%;
+    right: 5px;
+    transition: 0.8s linear;
+}
+.photoframe:hover .border.top{
+    right: 5px;
+}
+.photoframe:hover .border.bottom{
+    left: 5px;
+}
+.photoframe:hover .border.left{
+    top: 5px;
+}
+.photoframe:hover .border.right{
+    bottom: 5px;
+}
+.photo-content{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    padding-left: 10px;
+    transition: .8s linear;
+}
+.photoframe:hover .photo-content{
+    bottom: 15px;
+    left: 10px;
+}
+.photo-content h3, p{
+    text-transform: capitalize;
 }
